@@ -1,0 +1,12 @@
+# Template JSON formats - the main feature
+
+{{name}}
+{{userName}}
+{{user_name-123}}
+{{user\{name\}}}
+{"user": {{userName}}, "id": 123}
+[{{item1}}, {{item2}}, "static"]
+[{{firstName}}, {{lastName}}]
+{{}}
+{{user\}name}}
+{{prefix\}middle\}suffix}}

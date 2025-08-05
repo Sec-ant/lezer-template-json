@@ -1,0 +1,10 @@
+# Edge cases and error conditions - these may have parsing errors
+
+# Leading zeros should cause errors
+[0123]
+
+# Numbers with trailing decimal points
+123.
+
+# Numbers with incomplete exponents  
+42e

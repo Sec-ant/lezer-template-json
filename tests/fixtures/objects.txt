@@ -1,0 +1,5 @@
+# JSON Object formats
+
+{ }
+{"foo": 123}
+{"foo": 123, "bar": "I'm a bar!", "obj": {}, "arr": [1, 2, 3]}

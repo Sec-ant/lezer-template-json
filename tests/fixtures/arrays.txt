@@ -1,0 +1,5 @@
+# JSON Array formats
+
+[ ]
+["One is the loneliest number"]
+["The more the merrier", 1e5, true, { }, ["I'm", "nested"]]

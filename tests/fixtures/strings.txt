@@ -1,0 +1,6 @@
+# JSON String formats
+
+""
+"This is a boring old string"
+"\"\\\/\b\f\n\rt\t"
+"\u005C"

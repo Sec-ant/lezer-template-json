@@ -1,0 +1,9 @@
+# Complex real-world template JSON patterns
+
+{"user": {{userId}}, "profile": {"name": {{userName}}, "age": {{userAge}}}}
+[{"id": {{id1}}, "value": {{val1}}}, {"id": {{id2}}, "value": {{val2}}}]
+{"data": [{{item1}}, {{item2}}, {{item3}}], "meta": {"count": 3}}
+{"templateData": {"greeting": {{greeting}}, "name": {{name}}}, "timestamp": {{now}}}
+{"nested": {"deep": {"template": {{deepValue}}}}}
+{"mixedArray": [1, "static", {{dynamic}}, true, {{another}}]}
+{"config": {"baseUrl": {{baseUrl}}, "endpoint": {{endpoint}}, "timeout": {{timeout}}}}
