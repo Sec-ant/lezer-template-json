@@ -2,7 +2,7 @@
 
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { parser } from "../dist/es/index.js";
+import { parser } from "../src/index";
 
 // Utility function to load patterns from fixture files
 function loadPatterns(filename: string): string[] {
