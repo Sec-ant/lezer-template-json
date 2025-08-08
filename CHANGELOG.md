@@ -1,5 +1,11 @@
 # lezer-template-json
 
+## 0.1.4
+
+### Patch Changes
+
+- f57cc8b: Isolate Variable
+
 ## 0.1.3
 
 ### Patch Changes
