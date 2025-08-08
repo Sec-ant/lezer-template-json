@@ -36,7 +36,7 @@ PropertyName[isolate] { string }
   whitespace { $[ \n\r\t] }
 
   // Ensure double-brace delimiters beat single-brace variableChar matches
-  @precedence { VarOpen, VarClose, variableChar, whitespace }
+  @precedence { variableChar, whitespace }
 
   "{" "}" "[" "]" "," ":"
 }
