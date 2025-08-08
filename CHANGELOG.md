@@ -1,5 +1,11 @@
 # lezer-template-json
 
+## 0.1.2
+
+### Patch Changes
+
+- 81ae0ad: Map Variable token to variableName
+
 ## 0.1.1
 
 ### Patch Changes
