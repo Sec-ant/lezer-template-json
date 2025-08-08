@@ -17,5 +17,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "node",
+    forceRerunTriggers: [
+      "**/package.json/**",
+      "**/vitest.config.*/**",
+      "**/vite.config.*/**",
+      "**/fixtures/**"
+    ],
   },
 });

@@ -10,3 +10,10 @@
 {{}}
 {{user\}name}}
 {{prefix\}middle\}suffix}}
+{{\{escaped\}}}
+{{\\}}
+{{\{\\\}}}
+{{l{m}r}}
+{{l\{m\}r}}
+{{l\{{m\}}r}}
+{{l{\{m}\}r}}

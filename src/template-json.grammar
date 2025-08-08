@@ -27,7 +27,8 @@ variableContent { variableChar+ }
   esc  { $["\\\/bfnrt] | "u" hex hex hex hex }
   hex  { $[0-9a-fA-F] }
 
-  variableChar { $[\u{20}-\u{7c}\u{7e}-\u{10ffff}] | "\\" "}" }
+  variableChar { $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] | "\\" variableCharEsc }
+  variableCharEsc { $[{\\}] }
 
   whitespace { $[ \n\r\t] }
 
