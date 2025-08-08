@@ -1,5 +1,11 @@
 # lezer-template-json
 
+## 0.1.4
+
+### Patch Changes
+
+- 4699f90: Fix grammar
+
 ## 0.1.3
 
 ### Patch Changes
