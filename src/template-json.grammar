@@ -9,8 +9,9 @@ Array  { "[" list<value>? "]" }
 Property { PropertyName ":" value }
 PropertyName[isolate] { string }
 
-Variable { "{{" variableContent? "}}" }
-variableContent { variableChar+ }
+@skip {} {
+  Variable[isolate] { VarOpen variableChar* VarClose }
+}
 
 @tokens {
   True  { "true" }
@@ -27,14 +28,17 @@ variableContent { variableChar+ }
   esc  { $["\\\/bfnrt] | "u" hex hex hex hex }
   hex  { $[0-9a-fA-F] }
 
+  VarOpen { '{{' }
+  VarClose { '}}' }
   variableChar { $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] | "\\" variableCharEsc }
   variableCharEsc { $[{\\}] }
 
   whitespace { $[ \n\r\t] }
 
-  @precedence { variableChar, whitespace }
+  // Ensure double-brace delimiters beat single-brace variableChar matches
+  @precedence { VarOpen, VarClose, variableChar, whitespace }
 
-  "{" "}" "[" "]" "," ":" "{{" "}}"
+  "{" "}" "[" "]" "," ":"
 }
 
 @skip { whitespace }
