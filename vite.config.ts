@@ -21,7 +21,7 @@ export default defineConfig({
       "**/package.json/**",
       "**/vitest.config.*/**",
       "**/vite.config.*/**",
-      "**/fixtures/**"
+      "**/fixtures/**",
     ],
   },
 });
