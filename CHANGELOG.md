@@ -1,5 +1,11 @@
 # lezer-template-json
 
+## 0.1.3
+
+### Patch Changes
+
+- 6a77e38: Update variable character handling in grammar
+
 ## 0.1.2
 
 ### Patch Changes
