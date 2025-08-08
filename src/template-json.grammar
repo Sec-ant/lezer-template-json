@@ -9,7 +9,7 @@ Array  { "[" list<value>? "]" }
 Property { PropertyName ":" value }
 PropertyName[isolate] { string }
 
-Variable { "{{" variableContent? "}}" }
+Variable[isolate] { "{{" variableContent? "}}" }
 variableContent { variableChar+ }
 
 @tokens {
