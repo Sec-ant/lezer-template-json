@@ -2,4 +2,4 @@
 "lezer-template-json": patch
 ---
 
-Isolate Variable
+Fix grammar
