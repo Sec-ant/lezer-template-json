@@ -6,7 +6,7 @@ export const templateJsonHighlighting = styleTags({
   "True False": t.bool,
   PropertyName: t.propertyName,
   Null: t.null,
-  Variable: t.special(t.string),
+  Variable: t.variableName,
   ", :": t.separator,
   "[ ]": t.squareBracket,
   "{ }": t.brace,
